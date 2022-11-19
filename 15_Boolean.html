@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Boolean</title>
+	<style type="text/css">
+		body{
+			
+		}
+		#v{
+			font-size: 20px;
+			font-family: sans-serif;;
+			color: red;
+		}
+		
+	</style>
+</head>
+<body>
+	<h1 align = "center" >JavaScript Validation</h1>
+	<div align="center" id="v" >		
+		
+	</div>
+	<div align = "center"class="v1" id="v1" ></div>
+	<script type="text/javascript">
+		var info1 = null;
+		var info2 = "";
+		var info3 = 0;
+		var info4 = false;
+		var info5 = '00';               // in c it is error but in JAvaScript it act as string which contain '00'
+
+		d1 = Boolean(info1);
+		d2 = Boolean(info2);
+		d3 = Boolean(info3);
+		d4 = Boolean(info4);
+		d5 = Boolean(info5);
+
+		document.getElementById('v').innerHTML =
+								"<p> "+d1+"</p>"+
+								"<p> "+d2+"</p>"+
+								"<p> "+d3+"</p>"+
+								"<p> "+d4+"</p>"+
+								"<p> "+d5+"</p>";
+		
+	</script>
+</body>
+</html>
