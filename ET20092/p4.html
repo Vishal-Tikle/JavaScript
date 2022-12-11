@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Question 1 </title>
+</head>
+<body>
+	<form>
+		<h1>Check Whether You Are Eligible or Not</h1>
+		<input type="number" name="age" id="age">
+		<br>
+		<input type="button" onClick = "fun()" value="Check">
+	</form>
+	<script type="text/javascript">
+		function fun(){
+			var a = parseInt(document.getElementById('age').value);
+		
+			if (a > 18){
+				document.write("You are eligible for Vote");
+			}else{
+				document.write("You are not eligible for Vote");
+			}
+		}
+		
+	</script>
+</body>
+</html>

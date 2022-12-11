@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <div id="output">
+
+    </div>
+
+     <div id="output1">
+
+    </div>
+    <script type="text/javascript">
+        const color = new Array("red","violet","blue");
+
+        const arr = ["V","T"];
+
+        alert(color);
+        alert(color[0]);
+
+        alert(arr[0]);
+
+
+        // String = Array of character
+        var st = new Array();
+        st = "vishal"
+        alert(st[0]);     // v
+        alert(st);        // vishal
+
+        var arr1 = new Array();
+
+        arr1[0]="Hii ";
+        arr1[1]="Vishal";
+        arr1[2]="Nagpur";
+        // display element0,element1 
+        //document.write(arr1,"<br><br>");
+
+        //for(var i=0;i<3;i++){
+        //    document.getElementById('output').innerHTML=arr1[i];
+        //}
+
+
+        // Correct Answer
+        var d =" ";
+        for(var i=0;i<3;i++){
+           d += arr1[i] + "<br>";
+        }
+        document.getElementById('output').innerHTML= d;
+
+
+        var d =" ";
+        for(var i=0;i<3;i++){
+           d += "<p style='color :"+color[i]+"'>"+arr1[i]+"</p>";
+        }
+        document.getElementById('output1').innerHTML= d;
+
+        //DOM
+
+        document.write(d);
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math</title>
+    <style type="text/css">
+    	
+    	.vishal{
+    		font-family: sans-serif;
+    		font-size: 18px;
+    		color: violet;
+    		
+    		background : gradient(red,violet);
+    	}
+    </style>
+</head>
+<body>
+    <div id="v" class="vishal" ></div>
+    <script type="text/javascript">
+        var pi = Math.PI;
+        
+        var round = Math.round(9.6);     // 0.5 < v == large   else vice versa
+        var floor = Math.floor(4.9);     // smallest integer
+
+        var min = Math.min(20,12,30,60,87,32);
+        var max = Math.max(10,20.2,33.3, 5.99);
+
+        var truncate = Math.trunc(4.3);
+        var power = Math.pow(2,10);
+        var sqrt = Math.sqrt(2);
+        var random = Math.random();
+
+        document.getElementById('v').innerHTML = "PI : "+ pi +"<br>" 
+        									   + "Round : " + round+ "<br>"
+        									   + "Floor : " + floor+ "<br>"
+        									   + "Min : " + min + "<br>"
+        									   + "Max : " + max + "<br>"
+        									   + "Truncate : " + truncate+ "<br>"
+        									   + "Power (2^10) : " + power+ "<br>"
+        									   +"Square root of 2: " + sqrt+ "<br>"
+        									   +"random : " + random+ "<br>";
+
+       var n1,n2,sum;
+       n1 = parseInt.prompt("Enter number : ");
+       n2 = parseInt.prompt("Enter number : ");
+       n2 = parseInt.prompt("Enter number : ");
+
+    </script>
+</body>
+</html>

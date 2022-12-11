@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Even Odd</title>
+</head>
+<style type="text/css"> 
+	#for,#while{
+		/* display: flex; */
+		align-items: center;
+		/* justify-content: center; */
+	}
+	body{
+		background: gradient(to right,red, white);
+	}
+</style>
+<body>
+	<div id=while style="font-size: 70px; transform: none;" >
+		<span style='font-size: 70px; color: red;'>Even</span>
+		<span style='font-size: 70px; color: green;'>Odd</span> List : 
+	</div>
+	<hr>
+	<div id=for ></div>
+	<script type="text/javascript">
+		var num = parseInt(prompt("Enter the number : "));
+
+		var forData = "";
+
+		for(var i = 1; i<= num ; i++){
+			if(i % 2 == 0){
+				forData += "<p style='font-size: 70px; color: red;'>"+i+"</p>";
+			}
+			else{
+				forData += "<p  style='font-size: 70px; color: green;'>"+i+"</p>";
+			}
+			
+			
+		}
+		document.getElementById('for').innerHTML = forData;
+
+	</script>
+</body>
+</html>
