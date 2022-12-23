@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>Virat</title>
+</head>
+<body>
+	<div id="heading">Virat Kohli</div>
+	<div id="info">Virat Kohli (Hindi: [ʋɪˈɾɑːʈ ˈkoːɦliː] (listen); born 5 November 1988) is an Indian international cricketer and former captain of the India national cricket team. Widely regarded as one of the greatest batsmen of all time, Kohli plays as a right-handed batter for Royal Challengers Bangalore in the Indian Premier League and for Delhi in domestic Indian cricket. With 40 wins out of 68 tests, Kohli is India's most successful test captain, and one of the most successful test captains of all time, behind only Graeme Smith, Ricky Ponting and Steve Waugh.
+	Kohli made his Test debut in 2011.[4] He reached the number one spot in the ICC rankings for ODI batsmen for the first time in 2013.[5]  He has won Man of the Tournament twice at the ICC World Twenty20 (in 2014 and 2016). He is also the leading run scorer of all time in T20 Internationals as well as T20 World Cups.
+	</div>
+	<br>
+	<hr>
+	<br>
+	<button onclick="domstyle(1);">Small Font</button>
+	<button onclick="domstyle(2);">Big Head</button>
+	<button onclick="domstyle(3);">Big Font</button>
+	<button onclick="domstyle(4);">Bold</button>
+	<button onclick="domstyle(5);">Italic</button>
+	<button onclick="domstyle(6);">Underline</button>
+
+	<input type="color" id="newColor" onchange="domstyle(7);">
+
+
+	<script type="text/javascript">
+		function domstyle(choice){
+			switch(choice){
+					case 1:
+						document.getElementById("info").style.fontSize="8px";
+						break;
+					case 2:
+						document.getElementById("heading").style.fontSize="20px";
+						break;
+					case 3:
+						document.getElementById("info").style.fontSize="50px";
+						break;
+					case 4:
+						document.getElementById("heading").style.fontWeight="Bold";
+						break;
+					case 5:
+						document.getElementById("heading").style.fontStyle="Italic";
+
+						break;
+					case 6:
+						document.getElementById("info").style.textDecoration="Underline";
+						break;
+					case 7:
+						var newcolor = document.getElementById("newColor").value;
+						document.getElementById("info").style.color = newcolor;
+						document.getElementById("heading").style.color=newcolor;
+						break;
+			}
+
+		}
+	</script>
+
+</body>
+</html>
